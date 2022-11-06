@@ -1,10 +1,14 @@
 import 'package:app_client/blocs/notes_color_cubit.dart';
 import 'package:app_client/blocs/notes_cubit.dart';
 import 'package:app_client/ui/add_note_screen.dart';
+import 'package:app_client/ui/login_page.dart';
 import 'package:app_client/ui/main_screen.dart';
 import 'package:app_client/ui/search_screen.dart';
 import 'package:app_client/ui/show_note_screen.dart';
+import 'package:app_client/ui/signup_page.dart';
 import 'package:app_client/ui/theme/app_theme.dart';
+//import 'package:app_client/ui/welcome_page.dart';
+import 'package:app_client/ui/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -40,10 +44,13 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         initialRoute: '/',
         routes: {
-          '/': (context) => const MainScreen(),
+          '/': (context) => const WelcomeScreen(),
+          '/mainscreen': (context) => const MainScreen(),
           '/search': (context) => const SearchScreen(),
           '/add': (context) => NoteAddScreen(),
           '/show': (context) => ShowNoteScreen(),
+          '/login': (context) => const LoginScreen(),
+          '/signup': (context) => const SignupScreen(),
         },
       ),
     );
