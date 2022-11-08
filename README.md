@@ -1,5 +1,7 @@
 # Notes App
 
+An App project to store notes.
+
 
 ## Features
  - Supports Android/iOS (IOS not available yet)
@@ -8,9 +10,4 @@
  - Color labels for notes
  - Smooth UI 
 
-## To-do
- - [ ] GridView/ListView switcher 
- - [ ] AppLock
- - [ ] Archive notes
- - [ ] Cloud backup
  
